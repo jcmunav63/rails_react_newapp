@@ -16,6 +16,13 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'assets'),
+    },
+    host: '0.0.0.0',
+    port: 3001,
+  },
   output: {
     filename: '[name].js',
     sourceMapFilename: '[name].js.map',
