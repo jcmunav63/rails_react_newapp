@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Greeting from './Greeting';
 
 const App = () => (
+  <>
   <Router>
     <div>
       <Routes>
@@ -12,6 +13,7 @@ const App = () => (
       </Routes>
     </div>
   </Router>
+  </>
 );
 
 export default App;
