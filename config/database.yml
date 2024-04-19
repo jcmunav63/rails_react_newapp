@@ -14,7 +14,7 @@ default: &default
 
 development:
   <<: *default
-  database: rails_react_hello_one_development
+  database: rails_react_newapp_development
   username: postgres
   password: jcadmin
 
@@ -23,12 +23,12 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: rails_react_hello_one_test
+  database: rails_react_newapp_test
   username: postgres
   password: jcadmin
 
 production:
   <<: *default
-  database: rails_react_hello_one_production
+  database: rails_react_newapp_production
   username: rails_react_hello_one
   password: <%= ENV["RAILS_REACT_HELLO_ONE_DATABASE_PASSWORD"] %>
