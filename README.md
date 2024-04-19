@@ -1,10 +1,10 @@
-## Rails - React - Hello One App
+## Rails - React - NewApp
 
 <a name="readme-top"></a>
 <div align="center">
-    <img src="/app/assets/images/logo_jcm_md.png" alt="main-logo" width="500"  height="auto" />
+    <img src="/logo_jcm_md.png" alt="main-logo" width="500"  height="auto" />
   <br/>
-  <h3><b>Rails - React - Hello One App</b></h3>
+  <h3><b>Rails - React - NewApp</b></h3>
 </div>
 📗 Table of Contents <a name="table_of-contents"></a>
 
@@ -27,9 +27,9 @@
   - [❓ FAQ ](#-faq-)
   - [📝 License ](#-license-)
 
-## 📖 About project: Rails - React - Hello One App <a name="about-project"></a>
+## 📖 About project: Rails - React - NewApp <a name="about-project"></a>
 
-The Rails - React - Hello One App' is a basic application to practice the correct set up of a Rails project (back-end) in connection with React.js (front-end). It uses the Webpack & the Gem 'jsbundling-rails'.
+The Rails - React - NewApp' is a template repo to start an web application set up in one repository, with a back-end developed with Ruby on Rails, and a PostgreSQL database, and a front-end developed with React.js. This setup uses Webpack & the 'jsbundling-rails' gem.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -37,15 +37,17 @@ The Rails - React - Hello One App' is a basic application to practice the correc
 
   <ul>
     <li><a href="https://ruby-doc.org/">Ruby v 3.2.2</a></li>
-    <li><a href="https://rubyonrails.org/">Rails v 7.1.2</a></li>
+    <li><a href="https://rubyonrails.org/">Rails v 7.1.3</a></li>
     <li><a href="https://www.postgresql.org/">PostgreSQL v 16.1.1</a></li>
+    <li><a href="https://react.dev/">React v 18.2.0</a></li>
+    <li><a href="https://redux.js.org/">Redux v 9.1.0</a></li>s
   </ul>
 
 ### Key Features <a name="key-features"></a>
-- **Set up a Ruby on Rails project together with React.js as the front-end.**
+- **Set up a Ruby on Rails back-end project together with React.js as the front-end, in one repository.**
 - **Set up linters using Stylelint and Rubocop**
 - **Connect the Rails project to a PostgreSQL database.**
-- **Implement a 'Hello World' page with React to be displayed at the root url.**
+- **Implement a random 'Hello' message with React and Redux to be displayed at the root page.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -70,26 +72,35 @@ $ gem install rails
 
 ```sh
   cd my-folder
-  git clone https://github.com/jcmunav63/git@github.com:jcmunav63/rails-react-hello-one.git
+  git clone https://github.com/jcmunav63/rails_react_newapp.git
 ```
 
 ### Install
 
 This project requires the following dependencies: the Ruby interpreter, the Gem package manager, the Ruby on Rails web framework, a PostgreSQL database server, the Webpack JS module bundler, the jsbundling-rails gem, and two linters checkers: RuboCop (Ruby) and Stylelint (CSS styles).
 
+- To install all the gems for Ruby on Rails...
 ```sh
 bundle install
+```
+
+- To install all dependencies for React, Redux, npm...
+```sh
+npm install
 ```
 
 ### Usage
 
 To run the project, navigate to the project directory and execute the following command:
 
-Start the Ruby on Rails web server (Puma server) typing the following command...
+Using a GIT BASH terminal, start the Ruby on Rails web server together with the front-end server (React). It will start a development server that updates the page with every change in the fornt or back end...
 ```sh
-  rails s , or the complete command,
-  rails server
+  ./bin/dev
 ```
+
+- This template follows the one-repo Ruby on Rails & React set up detailed in the following article...
+Medium [article](https://betterprogramming.pub/react-with-rails-2022-bd28e1fcd355#ad0a) about setting up a Rails + React project (one repo)
+
 
 ### Check linters
 
@@ -129,7 +140,7 @@ Run the following command for CSS code...
 npx stylelint "**/*.{css,scss}"
 ```
 
-* Unit, request, and integration tests will be developed on another stage.
+* Unit tests with RSpec are not set up yet. These tests will be developed in another stage.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,7 +157,7 @@ npx stylelint "**/*.{css,scss}"
 ## 🔭 Future Features <a name="future-features"></a>
 
 - **Add instructions to this file in order to use it as a template for new projects using Rails & React.**
-- *** Unit, request, and integration tests will be developed on another stage.**
+- *** Unit, request, and integration tests using RSpec will be developed on another stage.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -172,7 +183,7 @@ I would like to thank all my colleagues, who inspire me to do my best everyday.
 
 **Did you create this project from scratch?**
 
-  - It is a simple Ruby on Rails project on the backend with connection to React.js on the frontend. It uses only one repo, by means of the Webpack JS bundler and the jsbundling-rails gem.
+  - It is a simple Ruby on Rails project on the back-end set up in one repository with a front-end developed with React.js. It uses one repo by means of the Webpack JS bundler and the jsbundling-rails gem.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
